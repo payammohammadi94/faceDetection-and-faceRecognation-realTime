@@ -1,0 +1,2 @@
+import face_recognation
+print(face_recognation.__version__)
