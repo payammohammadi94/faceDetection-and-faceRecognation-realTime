@@ -15,32 +15,20 @@ webcam_video_stream = cv2.VideoCapture(0)
 
 messi_image = "../image/messi_sample.jpg"
 xavi_image = "../image/xavi_sample.jpg"
-payam_image = "../image/payam.jpg"
-hemn_image = "../image/hemn.jpg"
-tayeb_image = "../image/tayeb.jpg"
-chonur_image = "../image/chonur.jpg"
-mehran_image = "../image/mehran.jpg"
+
 
 
 messi_image_load = face_recognition.load_image_file(messi_image)
 xavi_image_load = face_recognition.load_image_file(xavi_image)
-payam_image_load = face_recognition.load_image_file(payam_image)
-hemn_image_load = face_recognition.load_image_file(hemn_image)
-tayeb_image_load = face_recognition.load_image_file(tayeb_image)
-chonur_image_load = face_recognition.load_image_file(chonur_image)
-mehran_image_load = face_recognition.load_image_file(mehran_image)
+
 
 messi_image_encoding = face_recognition.face_encodings(messi_image_load)[0]
 xavi_image_encoding = face_recognition.face_encodings(xavi_image_load)[0]
-payam_image_encoding = face_recognition.face_encodings(payam_image_load)[0]
-hemn_image_encoding = face_recognition.face_encodings(hemn_image_load)[0]
-tayeb_image_encoding = face_recognition.face_encodings(tayeb_image_load)[0]
-chonur_image_encoding = face_recognition.face_encodings(chonur_image_load)[0]
-mehran_image_encoding = face_recognition.face_encodings(mehran_image_load)[0]
 
 
-list_of_encoding = [messi_image_encoding, xavi_image_encoding,payam_image_encoding,hemn_image_encoding,tayeb_image_encoding,chonur_image_encoding,mehran_image_encoding]
-name_of_image = ["messi","xavi","Payam Mohammadi","Hemn Mohammadi","Tayeb Ahmadi",'chonur mohammadi','mehran mohammadi']
+
+list_of_encoding = [messi_image_encoding, xavi_image_encoding]
+name_of_image = ["messi","xavi"]
 
 
 all_face_locations = []
